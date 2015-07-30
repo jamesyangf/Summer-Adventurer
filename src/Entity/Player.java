@@ -7,7 +7,6 @@ import java.util.HashMap;
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
-//import java.util.HashMap;
 
 /*
  * @author James Yang
@@ -113,7 +112,6 @@ public class Player extends MapObject {
 		try {
 			
 			BufferedImage spritesheet = ImageIO.read(getClass().getResourceAsStream("/Sprites/Player/player1.png"));
-			//BufferedImage spritesheet = ImageIO.read(getClass().getResourceAsStream("/Sprites/Player/leader.png"));
 			
 			//extract each of the animation action from it
 			sprites = new ArrayList<BufferedImage[]>();
@@ -147,8 +145,6 @@ public class Player extends MapObject {
 		animation.setFrames(sprites.get(IDLE));//set the animation to something
 		animation.setDelay(400);
 		
-//		JukeBox.load("/SFX/jump.mp3", "jump");
-//		JukeBox.load("/SFX/scratch.mp3", "scratch");
 		sfx = new HashMap<String, AudioPlayer>();
 		sfx.put("jump", new AudioPlayer("/SFX/jump.mp3"));
 		sfx.put("scratch", new AudioPlayer("/SFX/scratch.mp3"));
@@ -326,10 +322,6 @@ public class Player extends MapObject {
 		
 		// movement
 		if(left) { //if we are pressing left
-//			dx -= moveSpeed; //move to the left side
-//			if(dx < -maxSpeed) { //cant go past the max speed
-//				dx = -maxSpeed;
-//			}
 			if(sprinting){
 				//stamina   -= sprintCost;
 				moveSpeed = sprintSpeed;
@@ -345,10 +337,6 @@ public class Player extends MapObject {
 			
 		}
 		else if(right) {
-//			dx += moveSpeed;
-//			if(dx > maxSpeed) {
-//				dx = maxSpeed;
-//			}
 			if(sprinting){
 				//stamina   -= sprintCost;
 				moveSpeed = sprintSpeed;
@@ -435,11 +423,8 @@ public class Player extends MapObject {
 		//checks for the player being dead
 		//if player jumps off the screen
 		if(y > tileMap.getHeight()){
-			stop();
-//			long elapsed = (System.nanoTime() - flinchTimer) / 1000000;
-//			if(elapsed / 4000 % 2 == 0) {
+			stop(); //player stops
 			reallyDead = true; //he is really dead
-				//}
 		}
 		
 		//if it is falling and it stops falling
@@ -514,7 +499,6 @@ public class Player extends MapObject {
 		if(scratching) { //if we are scratching
 			if(currentAction != SCRATCHING) {
 				sfx.get("scratch").play(); //scratch sound plays
-				//JukeBox.play("scratch");
 				currentAction = SCRATCHING;
 				animation.setFrames(sprites.get(SCRATCHING));
 				animation.setDelay(50);

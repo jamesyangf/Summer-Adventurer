@@ -6,17 +6,9 @@ import java.awt.Graphics2D;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.image.BufferedImage;
-
 import javax.swing.JPanel; //see the window with JPanel
-/*
- * @author James Yang
- * Making the game loop, Threading
- * The gameloop is how the game runs
- */
-
-
-
 import GameState.GameStateManager;
+
 //this class also has a keyListener
 /*
  * @author James yang
@@ -132,9 +124,6 @@ public class GameLoop extends JPanel implements Runnable, KeyListener{
 	@Override
 	public void keyPressed(KeyEvent e) {
 		gsm.keyPressed(e);
-		
-		//Keys.keySet(e.getKeyCode(), true); //will be useful later on to move player
-		
 	}
 
 	@Override

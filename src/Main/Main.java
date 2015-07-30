@@ -9,8 +9,7 @@ import javax.swing.JFrame;
 public class Main {
 
 	public static void main(String[] args){
-		JFrame window = new JFrame("Summer Adventurer"); //title of the window
-		//window.setContentPane(new GameLoop());
+		JFrame window = new JFrame("Summer Adventurer"); //title of the windows
 		window.add(new GameLoop());//adds the gamePanel 
 		window.pack();//computes the size of the window
 		window.setLocationRelativeTo(window);//puts the frame in the center
