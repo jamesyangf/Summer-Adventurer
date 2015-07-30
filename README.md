@@ -19,27 +19,45 @@ not really done with everything yet, but I will try to improve on its readabilit
 help to get to where I am in developing the game.
 
 Controls:
-Q: Sprint
-W: Float
-E: Fireball
-R: Scratching
-Space: Jumping (Press it again while in the air for a double jump!)
-U: Upgrade Window
-Y: Cancel Upgrade Window
-ESC: Pause Menu
-<-: Left
-->: Right
+====================
+Q:    Sprint
+
+W:    Float
+
+E:    Fireball
+
+R:    Scratching
+
+Space:    Jumping (Press it again while in the air for a double jump!)
+
+U:    Upgrade Window
+
+Y:    Cancel Upgrade Window
+
+ESC:    Pause Menu
+
+<-:   Left
+
+->:   Right
 
 Issues:
+====================
 -I am missing a controls and a help page for the game at the moment
+
 -So far My Pause Menu does not completely stop the game when the pause menu gamestate comes up.
+
 -The audio portion of the game will only play on Windows when you are running it on Eclipse
 
 Other assets:
+====================
 -Main Menu Music and In Game Music from Adventure Time
+
 -Boss music from youtube
+
 -Victory Music from Final Fantasy
+
 -Tiles from a Youtuber 
+
 -BackGround Image from google image
 
 
