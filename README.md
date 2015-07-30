@@ -1,6 +1,6 @@
 The Summer Adventurer (JAVA)
+====================
 
----------------------------------------------------------------------------------------------------------------
 Created by James Frank Yang.
 
 You may modify and redistribute this code under the following conditions:
@@ -8,10 +8,10 @@ You may modify and redistribute this code under the following conditions:
 You may not sell this code, or any modification of it
 You must attribute the author (James Frank Yang)
 If you do choose to redistribute the work or any modification of it, it must carry these same conditions
----------------------------------------------------------------------------------------------------------------
+
 
 Notes:
-
+====================
 This is my 2015 Summer Project that I made with Java. This is a 2D side-scrolling game made with most of the assets made by me
 and the rest on the interweb. This is yet to be completely finished since I think there will be
 potential to include alot more levels and features to this game. The code may be a mess since I'm 
